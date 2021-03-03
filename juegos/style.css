@@ -1,0 +1,568 @@
+:root {
+    --rojo: #ff0000;
+    --verde: #164911;
+    --botonred: #ff0e1f;
+    --blanco: #ffffff;
+    --negro: #060100;
+    --hover: rgba(255, 255, 255, .02);
+    --Transparente: #06010067;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+img {
+    width: 100%;
+}
+
+
+/*tipografia*/
+
+
+/*Titulos*/
+
+.subtitulo {
+    text-align: left;
+    font-size: 3.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.color-titulo {
+    color: var(--rojo);
+}
+
+.contenedor {
+    width: 120rem;
+    margin: 0 auto;
+}
+
+.nav-bg {
+    background-color: var(--verde);
+}
+
+.boton {
+    background-color: var(--rojo);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: rgba(255, 58, 45, 0.75);
+    border-color: rgb(0, 0, 0);
+}
+
+.botonsomos {
+    background-color: var(--rojo);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: var(--botonred);
+}
+
+
+/*Navegador*/
+
+.conten-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 11rem;
+}
+
+.logo {
+    width: 60%;
+}
+
+.header {
+    margin: auto;
+    width: 150rem;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.navegacion-principal>li {
+    float: left;
+}
+
+.navegacion-principal li a {
+    background-color: var(--verde);
+    color: var(--blanco);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.4rem;
+    padding: 10px 7px;
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.navegacion-principal a:hover {
+    color: var(--rojo);
+    border-color: var(--rojo);
+    border-bottom: solid 1px;
+}
+
+.navegacion-principal li ul {
+    display: none;
+    position: absolute;
+    min-width: 10px;
+}
+
+.navegacion-principal li:hover>ul {
+    display: block;
+}
+
+.navegacion-principal li ul li {
+    position: relative;
+}
+
+
+/*Banner Home*/
+
+.banner {
+    background-image: url(img/BANNER-HOME1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 15rem;
+    opacity: 1;
+    visibility: inherit;
+    z-index: 20;
+}
+
+.contenido-banner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen-principal {}
+
+
+/*Somos*/
+
+@media (min-width: 768px) {
+    .somos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10rem;
+        padding-top: 10rem;
+        padding: 18rem 18rem;
+    }
+}
+
+.grid-imagen {
+    height: auto;
+    max-width: 100%;
+    vertical-align: top;
+}
+
+.text-somos {
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 300;
+}
+
+
+/*Torneos*/
+
+.contenido-torneos {
+    background-image: url(img/ingresa\ home\ c.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 12rem;
+    opacity: 1;
+    visibility: inherit;
+    z-index: 20;
+}
+
+.text-torneos {
+    color: var(--blanco);
+    text-align: left;
+    font-size: 3.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline var(--rojo);
+}
+
+.color-torneos {
+    color: var(--rojo);
+}
+
+
+/*Videos*/
+
+.videos {
+    background-color: var(--verde);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 12rem;
+    opacity: 1;
+    visibility: inherit;
+    z-index: 20;
+}
+
+.color-videos {
+    color: var(--rojo);
+}
+
+.text-videos {
+    color: var(--blanco);
+    text-align: left;
+    font-size: 3.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline var(--blanco);
+}
+
+
+/*Ranking*/
+
+.ranking {
+    background-image: url(img/ingresa\ home\ c.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 12rem;
+    opacity: 1;
+    visibility: inherit;
+    z-index: 20;
+}
+
+.text-ranking {
+    color: var(--blanco);
+    text-align: left;
+    font-size: 4.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline var(--rojo);
+}
+
+
+/*Nosotros*/
+
+.nosotros {
+    background-image: url(img/conoce-mas-sobre-nosotros-home.png);
+    background-repeat: no-repeat;
+    background-size: 220rem;
+    background-position: top left;
+    padding: 5rem;
+    opacity: 1;
+    visibility: inherit;
+    z-index: 20;
+    margin: 0 !important;
+}
+
+@media (min-width: 768px) {
+    .nosotros {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10rem;
+        padding-top: 10rem;
+        padding: 10rem 10rem;
+        width: 85%;
+    }
+}
+
+.text-nosotros {
+    color: var(--blanco);
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: left;
+}
+
+.botonnosotros {
+    background-color: var(--rojo);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: var(--botonred);
+}
+
+
+/*Footer*/
+
+.nav-footer {
+    background-color: rgb(15, 15, 15);
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.navegacion-footer {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    margin: 0;
+    list-style: none;
+}
+
+.navegacion-footer a {
+    color: var(--blanco);
+    text-decoration: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.navegacion-footer a:hover {
+    color: var(--rojo);
+    border-color: var(--rojo);
+    border-bottom: solid 1px;
+}
+
+.text-footer {
+    overflow: hidden;
+    padding: 15px 21px 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, .05);
+}
+
+
+/*Iconos*/
+
+.iconos {
+    text-align: center;
+}
+
+.contenido-iconos {
+    margin: 20px;
+}
+
+
+/*Membresia*/
+
+.suscripciones {
+    background-color: var(--verde);
+    padding: .5rem;
+}
+
+.text-suscripciones {
+    color: var(--blanco);
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: left;
+    padding: 5rem;
+    margin-left: 5.5rem;
+}
+
+
+/*SOMBRA EN TODAS LA PAGINAS*/
+
+.sombra {
+    box-shadow: 0px 10px 5px #000;
+    padding: 5rem;
+    margin: 0 !important;
+}
+
+.cont-sombra {
+    background-color: var(--verde);
+}
+
+.img-membresia {
+    width: 100%;
+}
+
+.img-contenido {
+    background-color: var(--verde);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding: 5rem 18rem;
+}
+
+
+/*Noticias*/
+
+.noticias {
+    background-color: var(--verde);
+    color: var(--blanco);
+    padding: 7rem;
+}
+
+.noticias__text {
+    font-size: 4rem;
+    margin-left: 8rem;
+    text-transform: uppercase;
+}
+
+.noticias__banner {
+    background-image: url(img/noticias-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding: 1rem;
+    visibility: inherit;
+    z-index: 20;
+}
+
+.banner__verde {
+    background-color: var(--verde);
+    padding: 15rem;
+}
+
+
+/*Buscador Y Más*/
+
+.buscador {
+    margin-left: 88rem;
+    margin-top: 5rem;
+}
+
+.buscador__placeholder::placeholder {
+    background-color: var(--negro);
+    font-size: 1.2em;
+}
+
+.torneos {
+    margin-left: 88rem;
+    width: 20rem;
+    background-color: rgba(15, 15, 15, .8);
+}
+
+.torneos__text {
+    margin-top: 80px;
+    color: var(--blanco);
+    font-size: 3rem;
+}
+
+.entradas__recientes {
+    margin-left: 88rem;
+    width: 30rem;
+    background-color: rgba(15, 15, 15, .8);
+}
+
+.entradas__text {
+    color: var(--blanco);
+    font-size: 3rem;
+}
+
+.bg__recientes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1px;
+}
+
+.categorias {
+    max-width: 150px;
+    background-color: rgba(15, 15, 15, .8);
+    padding: 10px 10px 10px;
+}
+
+.categorias__text {
+    color: var(--blanco);
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.categorias_p {
+    color: var(--blanco);
+    text-align: center;
+}
+
+
+/* Galeria*/
+
+.galeria {
+    background-color: var(--verde);
+}
+
+.galeria__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    width: 110rem;
+    margin: 0 auto;
+}
+
+.galeria__img {
+    width: 100%;
+    margin: .5rem;
+}
+
+.galeria__img:hover {
+    cursor: pointer;
+    background-color: var(--verde);
+}
+
+
+/*Calendario*/
+
+.calendario {
+    background-image: url(img/calendario-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding: 15rem;
+    visibility: inherit;
+    z-index: 20;
+}
+
+
+/*Torneo*/
+
+.torneos__img {
+    background-image: url(img/calendario-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding: 15rem;
+    visibility: inherit;
+    z-index: 20;
+}
+
+
+/*Ranking*/
+
+.ranking {
+    background-image: url(img/rankings-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding: 15rem;
+    visibility: inherit;
+    z-index: 20;
+}
